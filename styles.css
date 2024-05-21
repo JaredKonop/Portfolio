@@ -1,0 +1,21 @@
+.custom-card {
+  width: 70%;
+  text-align: center;
+  justify-content: center;
+  margin: 1%;
+}
+
+/* styles.css */
+.large-text {
+  font-size: 3rem;
+}
+
+.nav-link-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+/*.padded-row {
+  padding: 50px 100px; /* Adjust the horizontal padding as desired 
+}
+*/

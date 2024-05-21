@@ -1,0 +1,20 @@
+:root {
+  --card-width: 400px;
+  --card-height: 400px;
+}
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+  :root {
+    --card-width: 250px;
+    --card-height: 350px;
+  }
+}
+
+/* Phones and smaller devices */
+@media (max-width: 480px) {
+  :root {
+    --card-width: 300px;
+    --card-height: 400px;
+  }
+}
