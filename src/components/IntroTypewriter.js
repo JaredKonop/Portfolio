@@ -18,10 +18,9 @@ const IntroTypewriter = () => {
         <Typewriter
           options={{
             strings: [
-              " Software Developer",
-              " Freelancer",
-              " MERN Stack Developer",
-              " Open Source Contributor",
+              " Frontend Developer",
+              " Backend Developer",
+              " Web Developer",
             ],
             autoStart: true,
             loop: true,

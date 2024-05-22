@@ -7,6 +7,14 @@ import "../tailwind.css";
 import "../pages/styles.css";
 import CIcon from "@coreui/icons-react";
 import * as icon from "@coreui/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faHome,
+  faCode,
+  faUserLarge,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
 function BasicExample() {
   return (
@@ -18,17 +26,24 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-xl">
-            <Nav.Link as={Link} to="/home" className="text-white text-lg">
-              <CIcon icon={icon.cilList} size="xxl" />
+            <Nav.Link
+              as={Link}
+              to="/home"
+              className="text-white text-lg d-flex align-items-center"
+            >
+              <FontAwesomeIcon icon={faHome} />
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/projects" className="text-white text-lg">
+              <FontAwesomeIcon icon={faCode} />
               Projects
             </Nav.Link>
             <Nav.Link as={Link} to="/resume" className="text-white text-lg">
+              <FontAwesomeIcon icon={faStar} />
               Resume
             </Nav.Link>
             <Nav.Link as={Link} to="/about" className="text-white text-xl">
+              <FontAwesomeIcon icon={faUserLarge} />
               About
             </Nav.Link>
           </Nav>

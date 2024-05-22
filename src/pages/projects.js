@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import ce from "../Assets/codeEditor.png";
 import "./styles.css"; // Import the styles.css file
 import "./variables.css";
+import Particle from "../components/Particles";
 
 const Projects = () => {
   return (
@@ -32,6 +33,7 @@ const Projects = () => {
           </Col>
         ))}
       </Row>
+      <Particle />
     </div>
   );
 };

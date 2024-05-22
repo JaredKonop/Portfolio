@@ -1,0 +1,13 @@
+dependencies used 
+
+npm i typewriter-effect
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+npm install @coreui/icons
+npm install @coreui/icons-react
+
+npm i react-router-dom
+
+npm install bootstrap@v5.3.3

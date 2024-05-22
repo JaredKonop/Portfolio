@@ -8,6 +8,7 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Resume from "./pages/resume";
 import "./index.css";
+import Particle from "./components/Particles";
 
 function App() {
   return (
