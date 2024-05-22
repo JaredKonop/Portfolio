@@ -7,9 +7,26 @@
 
 /* styles.css */
 .large-text {
-  font-size: 3rem;
+  font-size: xx-large;
 }
 
+.basic-navbar-nav {
+  color: white;
+}
+.navbar-toggler {
+  color: white;
+}
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: large;
+}
+.basic-navbar-nav {
+  border-color: rgba(255, 255, 255, 1);
+}
+.navbar-toggler-icon {
+  border-color: rgba(255, 255, 255, 1);
+}
 .nav-link-with-icon {
   display: flex;
   align-items: center;

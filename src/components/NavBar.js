@@ -18,14 +18,14 @@ import {
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-customColor p-2">
+    <Navbar expand="lg" className="bg-customColor p-2 sticky-top">
       <Container>
         <Navbar.Brand href="#home">
           <img src={jklogo} width="80" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto text-xl">
+          <Nav className="nav-bar-font ms-auto text-xl">
             <Nav.Link
               as={Link}
               to="/home"
