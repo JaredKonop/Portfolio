@@ -10,6 +10,7 @@ const Resume = () => {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
+          color: "white",
         }}
       >
         <h1>Resume Page</h1>
