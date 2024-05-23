@@ -3,6 +3,10 @@ import Particle from "../components/Particles";
 import "../styles/about.css";
 import me from "../Assets/me.jpg";
 
+//https://letterboxd.com/unclejared/films/by/entry-rating/
+
+//https://www.goodreads.com/review/list/175927632-jared-konop?shelf=read&view=covers
+
 const About = () => {
   return (
     <div className="about-container">
