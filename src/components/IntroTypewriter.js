@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import "../pages/styles.css";
+import "../styles/styles.css";
 
 const IntroTypewriter = () => {
   return (

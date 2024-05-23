@@ -1,0 +1,195 @@
+/*.custom-card {
+  width: 70%;
+  text-align: center;
+  justify-content: center;
+  margin: 1%;
+}*/
+
+/* styles.css */
+.custom-card {
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  backdrop-filter: blur(
+    3px
+  ); /* Optional: Add a blur effect for better readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.card-body {
+  color: white;
+}
+
+.card-title {
+  padding-top: 3%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.pt-5 {
+  padding-top: 3rem; /* Adjust the padding as necessary */
+}
+
+.mt-5 {
+  margin-top: 3rem; /* Adjust the margin as necessary */
+}
+
+/* styles.css */
+.large-text {
+  font-size: xx-large;
+}
+
+.nav-link:hover {
+  color: rgb(68, 214, 224);
+}
+
+.nav-icon {
+  padding-right: 5px;
+}
+.nav-link:hover .nav-icon {
+  color: rgb(68, 214, 224);
+}
+.nav-link:hover .nav-text {
+  color: rgb(137, 173, 175);
+}
+
+.basic-navbar-nav {
+  color: white;
+}
+.navbar-toggler {
+  color: white;
+}
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: large;
+}
+.basic-navbar-nav {
+  border-color: rgba(255, 255, 255, 1);
+}
+.navbar-toggler-icon {
+  border-color: rgba(255, 255, 255, 1);
+}
+.nav-link-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+#tsparticles {
+  height: 5px;
+}
+
+.transparent-background {
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  backdrop-filter: blur(
+    10px
+  ); /* Optional: Add a blur effect for better readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+footer {
+  margin-bottom: 0;
+}
+.footer-text {
+  font-size: large;
+  color: white;
+}
+
+text-body.footer-text {
+  color: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  z-index: 2000; /* Ensure the navbar is above other content */
+  backdrop-filter: blur(
+    10px
+  ); /* Optional: Add a blur effect for better readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.content {
+  padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+
+.pdf-container {
+  width: 100%;
+  overflow: auto;
+  padding: 2%;
+  margin: 2%;
+  box-sizing: border-box;
+}
+
+.resume-container {
+  max-width: 100%; /* Use max-width for responsive scaling */
+  margin: 0 auto;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: center; /* Center content */
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.resume-title {
+  margin-bottom: 20px;
+  color: white;
+  padding-top: 10%;
+}
+
+.projects-title {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Styles for tablet screens */
+@media (max-width: 768px) {
+  .resume-container {
+    font-size: 14px;
+    padding: 2%;
+  }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 480px) {
+  .resume-container {
+    font-size: 12px;
+    padding: 2%;
+  }
+}
+
+.sourcecode-btn {
+  background-color: #3ebefa; /* Specify your desired background color */
+  border-color: #000000; /* Specify your desired border color */
+  color: #fff; /* Specify your desired text color */
+}
+
+.sourcecode-btn:hover {
+  background-color: #c4eafc; /* Specify your desired background color on hover */
+  border-color: #000000; /* Specify your desired border color on hover */
+  color: #fff; /* Specify your desired text color on hover */
+}

@@ -1,8 +1,16 @@
 import React from "react";
 import Home from "../pages/home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 import Particle from "./Particles";
+import "../styles/styles.css";
+import "..//App.css";
 
 function Footer() {
   const buttonStyles = {
@@ -27,12 +35,21 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-body-tertiary text-center">
+    <footer className="text-center transparent-background">
       <div className="container p-4 pb-0">
         <section className="mb-4">
           <a
             data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
+            className="btn text-white btn-floating rounded-circle m-1"
+            style={buttonStyles.linkedin}
+            href="https://www.linkedin.com/in/jared-konop"
+            role="button"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            data-mdb-ripple-init
+            className="btn text-white btn-floating rounded-circle m-1"
             style={buttonStyles.github}
             href={"https://github.com/JaredKonop/"}
             role="button"
@@ -41,57 +58,39 @@ function Footer() {
           </a>
           <a
             data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
-            style={buttonStyles.twitter}
-            href="#!"
+            className="btn text-white btn-floating rounded-circle m-1"
+            style={buttonStyles.facebook}
+            href="https://www.facebook.com/jared.konop/"
             role="button"
           >
-            <i className="fab fa-twitter"></i>
+            <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a
             data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
-            style={buttonStyles.google}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-google"></i>
-          </a>
-          <a
-            data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
+            className="btn text-white btn-floating rounded-circle m-1"
             style={buttonStyles.instagram}
-            href="#!"
+            href="https://www.instagram.com/jaredkonop/"
             role="button"
           >
-            <i className="fab fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
-            style={buttonStyles.linkedin}
-            href="#!"
+            className="btn text-white btn-floating rounded-circle m-1"
+            style={buttonStyles.twitter}
+            href="https://x.com/jared_konop"
             role="button"
           >
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
-            style={buttonStyles.github}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-github"></i>
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
         </section>
       </div>
-      <div
-        className="text-center p-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-      >
+      <div className="text-center p-0 footer-text">
         Portfolio By:{" "}
-        <a className="text-body" href="https://mdbootstrap.com/">
+        <a
+          style={{ color: "white" }}
+          href="https://github.com/JaredKonop/Portfolio"
+        >
           Jared M Konop
         </a>
         <Particle />
