@@ -1,22 +1,20 @@
 import React from "react";
 import Particle from "../components/Particles";
-import { Container } from "react-bootstrap";
+import "../styles/about.css";
+import me from "../Assets/me.jpg";
 
 const About = () => {
   return (
-    <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      >
-        <h1>About Page</h1>
+    <div className="about-container">
+      <div className="about-text">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div className="about-image">
+        <img src={me} alt="Your Name" />
       </div>
       <Particle />
-    </>
+    </div>
   );
 };
 
