@@ -26,14 +26,13 @@ function BasicExample() {
           <Nav className="ms-auto">
             <Nav.Link
               as={Link}
-              to="/home"
+              to="/about"
               className="nav-link text-white d-flex align-items-center"
             >
-              {" "}
               <span className="nav-icon">
-                <FontAwesomeIcon icon={faHome} className="me-2" />
+                <FontAwesomeIcon icon={faUserLarge} className="me-2" />
               </span>
-              <span className="nav-text">Home</span>
+              <span className="nav-text">About Me</span>
             </Nav.Link>
             <Nav.Link
               as={Link}
@@ -58,13 +57,13 @@ function BasicExample() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/about"
+              to="/contact"
               className="nav-link text-white d-flex align-items-center"
             >
               <span className="nav-icon">
                 <FontAwesomeIcon icon={faUserLarge} className="me-2" />
               </span>
-              <span className="nav-text">About Me</span>
+              <span className="nav-text">Contact</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

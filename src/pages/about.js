@@ -2,6 +2,8 @@ import React from "react";
 import Particle from "../components/Particles";
 import "../styles/about.css";
 import me from "../Assets/me.jpg";
+import me_blacksuit from "../Assets/me_blacksuit.jpg";
+import IntroTypewriter from "../components/IntroTypewriter";
 
 //https://letterboxd.com/unclejared/films/by/entry-rating/
 
@@ -11,12 +13,17 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-text">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className="about-name">
+          <h1>Welcome to my Portfolio!</h1>
+        </div>
+        <div className="about-typewriter">
+          <IntroTypewriter />
+        </div>
       </div>
-      <div className="about-image">
-        <img src={me} alt="Your Name" />
+      <div className="about-image ">
+        <img className="profile-img" src={me_blacksuit} alt="Your Name" />
       </div>
+
       <Particle />
     </div>
   );

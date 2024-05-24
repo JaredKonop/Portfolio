@@ -6,21 +6,7 @@ import "../styles/styles.css";
 import Particle from "../components/Particles";
 
 const Home = () => {
-  return (
-    <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      >
-        <IntroTypewriter />
-      </div>
-      <Particle />
-    </>
-  );
+  return <></>;
 };
 
 export default Home;

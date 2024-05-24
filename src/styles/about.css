@@ -8,23 +8,31 @@
 .about-text {
   color: white;
   flex: 1;
-  padding: 0 20px; /* Adjust left and right padding as needed */
-  display: flex;
-  justify-content: center; /* Center text horizontally */
-  align-items: center;
-  text-align: center; /* Center text content */
+  padding: 0 0px;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.about-text h1 {
+  margin-bottom: 0px;
 }
 
 .about-image {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 20px;
+
+  text-align: center;
 }
 
-img {
-  max-width: 100%;
-  max-height: 80vh; /* Limit image height */
-  border-radius: 50%; /* Apply border-radius for rounded corners */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+.profile-img {
+  border-radius: 40%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  width: 60%;
+  height: auto;
+  transition: box-shadow 0.7s ease;
+}
+
+.profile-img:hover {
+  box-shadow: 10px 10px 20px rgb(81, 197, 243);
 }
