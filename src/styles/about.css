@@ -37,6 +37,9 @@
   box-shadow: 10px 10px 20px rgb(81, 197, 243);
 }
 
+.skills-container {
+  background-color: black;
+}
 .skills-grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

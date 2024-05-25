@@ -79,6 +79,7 @@ const Projects = () => {
           ))}
         </Row>
       </Container>
+      <Particle />
     </div>
   );
 };

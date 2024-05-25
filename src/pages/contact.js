@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import "../styles/contact.css";
+import Particle from "../components/Particles";
 
 const ContactMe = () => {
   return (
@@ -32,6 +33,7 @@ const ContactMe = () => {
         </Button>
       </Form>
     </Container>
+    <>
   );
 };
 
