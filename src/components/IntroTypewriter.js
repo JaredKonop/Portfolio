@@ -9,12 +9,13 @@ const IntroTypewriter = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "10vh",
         color: "white",
       }}
     >
-      <h1 className="large-text">I am a&nbsp;</h1>
       <div className="large-text">
+        <h1>I am a&nbsp;</h1>
+
         <Typewriter
           options={{
             strings: [

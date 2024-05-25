@@ -8,14 +8,13 @@
 .about-text {
   color: white;
   flex: 1;
-  padding: 0 0px;
+  padding: 0 20px;
   flex-direction: column;
   text-align: center;
-  padding-top: 40vh;
 }
 
 .about-text h1 {
-  margin-bottom: 0px;
+  margin-top: 0%;
 }
 
 .about-image {
@@ -29,10 +28,71 @@
   border-radius: 40%;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   width: 60%;
+  max-width: 100%;
   height: auto;
   transition: box-shadow 0.7s ease;
 }
 
 .profile-img:hover {
   box-shadow: 10px 10px 20px rgb(81, 197, 243);
+}
+
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: 0 10%;
+}
+
+.skills-card {
+  position: relative;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.skills-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block; /* Display icon by default */
+}
+
+.skills-text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide text content by default */
+}
+
+.hover-text {
+  position: absolute; /* Position the text absolutely relative to the card */
+  top: 50%; /* Position at the middle vertically */
+  left: 50%; /* Position at the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  opacity: 0; /* Hide the text by default */
+  transition: opacity 0.3s ease; /* Add a transition effect for smoother appearance */
+}
+
+.skills-card:hover .hover-text {
+  opacity: 1; /* Show the text when the card is hovered over */
+}
+.skills-container {
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.skills-container h1 {
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 1fr)
+    ); /* Adjust columns for smaller screens */
+  }
 }
