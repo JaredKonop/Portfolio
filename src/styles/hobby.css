@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+.hobby-container {
+  margin-bottom: 15%;
+  padding-bottom: 5%;
+}
+
+.hobby-title {
+  width: 30%; /* Adjust width as needed */
+  height: 10%; /* Adjust height as needed */
+  background-color: #ffffff; /* Change background color as needed */
+  transform: skewX(-20deg);
+  margin: 20px;
+  margin-left: auto; /* Set margin-left to auto */
+  margin-right: -20px; /* Adjust this value based on the skew angle */
+  position: relative;
+}
+
+.hobby-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px; /* Adjust this value based on the skew angle */
+  width: 20px; /* Adjust this value based on the skew angle */
+  height: 100%;
+  background-color: #ffffff; /* Change background color as needed */
+  transform: skewX(-20deg);
+}
+
+.hobby-title h1 {
+  transform: skewX(20deg);
+  margin: 0;
+  text-align: center;
+  padding: 4% 10%;
+  color: #002130; /* Change text color as needed */
+}
+
+.movie-section {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center; /* Center content horizontally */
+}
+
+.letterbox {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.movie-hover-link {
+  color: #ffffff; /* Default color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.movie-hover-link:hover {
+  color: rgb(88, 204, 250); /* Color change on hover */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.movies {
+  display: flex;
+}
+
+@media (orientation: landscape) {
+  main {
+    scale: 0.9;
+  }
+}
+@keyframes move {
+  0% {
+    transform: rotateY(-20deg) rotateX(-5deg);
+  }
+  25% {
+    transform: rotateY(20deg) rotateX(-5deg);
+  }
+  50% {
+    transform: rotateY(20deg) rotateX(5deg);
+  }
+  75% {
+    transform: rotateY(-20deg) rotateX(5deg);
+  }
+  100% {
+    transform: rotateY(-20deg) rotateX(-5deg);
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  perspective: 1000px;
+}
+#joker_poster {
+  aspect-ratio: 0.6428571429;
+  background: center / cover no-repeat url("../Assets/Joker/Joker_bg.png");
+  margin-right: 20px;
+  width: 33%;
+  max-width: 50vmin;
+  position: relative;
+  animation: move 15s 0s infinite;
+  transform-style: preserve-3d;
+  border-radius: 5vmin;
+}
+#joker_poster__header {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(15vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+}
+#joker_poster__header__title {
+  font-family: "Agency FB Black";
+  font-size: 22vmin;
+  position: absolute;
+  margin: 0;
+  line-height: 1em;
+  white-space: nowrap;
+  background-image: url("../Assets/Joker/Joker_text.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#joker_poster__header__title::before {
+  content: attr(data-title);
+  position: absolute;
+  color: #ffc61c 5e;
+  -webkit-text-fill-color: initial;
+  mix-blend-mode: overlay;
+  opacity: 1;
+  text-shadow: 0px 0px 4vmin rgba(0, 0, 0, 0.4), 1px 1px #bf4528;
+}
+#joker_poster__front_image {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateZ(15vmin);
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
+  border-radius: 6vmin;
+}
+
+#joker_poster__front_img {
+  display: block; /* Remove any default inline behavior */
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateZ(10vmin);
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 6vmin;
+}
+
+.books-section {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: red;
+}
+
+.book {
+}
+
+.goodreads {
+}
+
+.book-hover-link {
+  color: #ffffff; /* Default color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.book-hover-link:hover {
+  color: rgb(88, 204, 250); /* Color change on hover */
+  cursor: pointer; /* Show pointer cursor on hover */
+}

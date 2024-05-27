@@ -128,36 +128,3 @@
     ); /* Adjust columns for smaller screens */
   }
 }
-
-.hobby-container {
-}
-
-.hobby-title {
-  width: 30%; /* Adjust width as needed */
-  height: 10%; /* Adjust height as needed */
-  background-color: #ffffff; /* Change background color as needed */
-  transform: skewX(-20deg);
-  margin: 20px;
-  margin-left: auto; /* Set margin-left to auto */
-  margin-right: -20px; /* Adjust this value based on the skew angle */
-  position: relative;
-}
-
-.hobby-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -20px; /* Adjust this value based on the skew angle */
-  width: 20px; /* Adjust this value based on the skew angle */
-  height: 100%;
-  background-color: #ffffff; /* Change background color as needed */
-  transform: skewX(-20deg);
-}
-
-.hobby-title h1 {
-  transform: skewX(20deg);
-  margin: 0;
-  text-align: center;
-  padding: 4% 10%;
-  color: #002130; /* Change text color as needed */
-}
