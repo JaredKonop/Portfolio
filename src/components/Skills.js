@@ -10,6 +10,7 @@ import {
   DiNodejsSmall,
   DiMysql,
   DiWordpress,
+  DiA,
 } from "react-icons/di";
 
 import {
@@ -45,7 +46,10 @@ const Skills = () => {
 
   return (
     <div className="skills-container">
-      <h1>Skills</h1>
+      <div className="skills-title">
+        {" "}
+        <h1>Skills</h1>
+      </div>
       <h3>Languages</h3>
       <div className="skills-grid-container">
         {/* You can repeat this card component for each of your 6 cards */}

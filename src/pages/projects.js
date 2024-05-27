@@ -50,7 +50,9 @@ const Projects = () => {
             textAlign: "center",
           }}
         >
-          <h2 className="projects-title">Projects</h2>
+          <div className="projects-title">
+            <h1>Projects</h1>
+          </div>
         </Row>
         <Row
           xs={1}

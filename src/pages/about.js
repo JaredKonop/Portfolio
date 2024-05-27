@@ -5,6 +5,7 @@ import me from "../Assets/me.jpg";
 import me_blacksuit from "../Assets/me_blacksuit.jpg";
 import IntroTypewriter from "../components/IntroTypewriter";
 import Skills from "../components/Skills";
+import Hobby from "../components/Hobby";
 
 //https://letterboxd.com/unclejared/films/by/entry-rating/
 
@@ -29,6 +30,7 @@ const About = () => {
         <Particle />
       </div>
       <Skills />
+      <Hobby />
     </>
   );
 };
