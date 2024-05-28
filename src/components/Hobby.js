@@ -3,6 +3,7 @@ import "../styles/hobby.css";
 import JP from "../Assets/Joker/Jonaquin_Phoneix.png";
 import Person from "../Assets/Joker/Joker_person_w_legs.png";
 import Joker from "../Assets/Joker/Joker_text.png";
+import Book from "../components/Book";
 
 const Hobby = () => {
   return (
@@ -59,7 +60,9 @@ const Hobby = () => {
       </div>
 
       <div className="books-section">
-        <div className="book"></div>
+        <div className="book-shelf">
+          <Book />
+        </div>
         <div className="goodreads">
           <h1>Books</h1>
           <a
