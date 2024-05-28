@@ -47,10 +47,10 @@ const Particle = () => {
           },
           modes: {
             push: {
-              quantity: 8,
+              quantity: 3,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
@@ -63,7 +63,7 @@ const Particle = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.3,
             width: 1,
           },
           move: {
@@ -84,7 +84,7 @@ const Particle = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
           shape: {
             type: "circle",

@@ -57,7 +57,7 @@
   left: -20px; /* Adjust this value based on the skew angle */
   width: 20px; /* Adjust this value based on the skew angle */
   height: 100%;
-  background-color: #3498db; /* Change background color as needed */
+  background-color: #ffffff; /* Change background color as needed */
   transform: skewX(20deg);
 }
 .skills-title h1 {
