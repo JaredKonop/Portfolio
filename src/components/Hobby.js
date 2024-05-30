@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "../styles/hobby.css";
 import JP from "../Assets/Joker/Jonaquin_Phoneix.png";
 import Person from "../Assets/Joker/Joker_person_w_legs.png";
@@ -9,8 +10,24 @@ import old_guy from "../Assets/Up/Old guy.png";
 import dog from "../Assets/Up/Dog.png";
 import up from "../Assets/Up/UP.png";
 import Book from "../components/Book";
+import green from "../Assets/green_cropped.png";
+import golfer from "../Assets/golfer_cropped.png";
+import Golf from "../components/Golf";
 
 const Hobby = () => {
+  const [startAnimation, setStartAnimation] = useState(false);
+  const [resetAnimation, setResetAnimation] = useState(false);
+
+  const handleGolferClick = () => {
+    setStartAnimation(true);
+    setResetAnimation(false);
+  };
+
+  const handleGreenClick = () => {
+    setResetAnimation(true);
+    setStartAnimation(false);
+  };
+
   return (
     <div className="hobby-container">
       <div className="hobby-title">
@@ -72,6 +89,17 @@ const Hobby = () => {
           </a>
         </div>
       </div>
+
+      {/* <div className="golf-section">
+        <Golf start={startAnimation} reset={resetAnimation} />
+        <div className="golf" onClick={handleGolferClick}>
+          <img src={golfer} alt="Golfer" className="smaller-golfer" />
+          <h1>Golf</h1>
+        </div>
+        <div className="green" onClick={handleGreenClick}>
+          <img src={green} alt="Golf Green" className="smaller-image" />
+        </div>
+      </div> */}
     </div>
   );
 };

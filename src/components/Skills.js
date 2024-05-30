@@ -88,8 +88,8 @@ const Skills = () => {
         <div className="skills-card" onClick={() => toggleText("sql")}>
           {showText.sql ? "SQL" : <DiMysql />}
         </div>
-        <div className="skills-card" onClick={() => toggleText("adobe")}>
-          {showText.adobe ? "Adobe" : <CIcon icon={cibAdobe} />}
+        <div className="skills-card" onClick={() => toggleText("wordpress")}>
+          {showText.wordpress ? "WordPress" : <DiWordpress />}
         </div>
         <div className="skills-card" onClick={() => toggleText("wordpress")}>
           {showText.wordpress ? "WordPress" : <DiWordpress />}
