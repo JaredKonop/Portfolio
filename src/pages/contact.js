@@ -32,8 +32,11 @@ const ContactMe = () => {
 
   return (
     <>
-      <Container className="contact-me-container">
+      <div className="contact-title">
+        {" "}
         <h1>Contact Me</h1>
+      </div>
+      <Container className="contact-me-container">
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
@@ -86,9 +89,9 @@ const ContactMe = () => {
           </Alert>
         )}
       </Container>
-
-      <div className="linkedIN">
-        <h2>Friend me on Linked In !</h2>
+      <div className="linkedin-title">
+        {" "}
+        <h1>Add Me!</h1>
       </div>
     </>
   );
