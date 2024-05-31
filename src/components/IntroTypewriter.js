@@ -14,8 +14,6 @@ const IntroTypewriter = () => {
       }}
     >
       <div className="large-text">
-        <h1>I am a&nbsp;</h1>
-
         <Typewriter
           options={{
             strings: [

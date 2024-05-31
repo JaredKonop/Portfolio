@@ -1,24 +1,23 @@
-/* src/pages/ContactMe.css */
 .contact-me-container {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 5%;
+  padding: 2%;
   background-color: #f5f5f5d5;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(44, 223, 255);
 }
 
-.contact-me-container h1 {
-  margin-bottom: 20px;
+/* .contact-me-container h1 {
+  margin-bottom: 5%;
   text-align: center;
   color: #022c33;
-}
+} */
 
 .contact-me-container .form-label {
   color: #022c33;
 }
 
 .contact-me-container .form-control {
-  margin-bottom: 10px;
+  margin-bottom: 1%;
 }
 
 .contact-me-container .btn-primary {
@@ -27,65 +26,74 @@
   border-style: double;
   color: white;
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 1%;
+  font-size: 1.5rem;
 }
 
 .contact-title {
-  width: 30%; /* Adjust width as needed */
-  height: 10%; /* Adjust height as needed */
-  background-color: #ffffff; /* Change background color as needed */
+  width: 30%;
+  height: 10%;
+  background-color: #ffffff;
   transform: skewX(20deg);
   margin-top: 3%;
-  margin: 20px;
-  margin-left: -20px; /* Adjust this value based on the skew angle */
+  margin: 2%;
+  margin-left: -5%;
   position: relative;
 }
 
-.contact-title::before {
+/* .contact-title::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -20px; /* Adjust this value based on the skew angle */
-  width: 20px; /* Adjust this value based on the skew angle */
+  left: -20px;
+  width: 20px;
   height: 100%;
-  background-color: #ffffff; /* Change background color as needed */
+  background-color: #ffffff;
   transform: skewX(20deg);
-}
+} */
+
 .contact-title h1 {
   transform: skewX(-20deg);
   margin: 0;
-  padding: 4% 10%;
+  padding: 4%;
+  padding-left: 20%;
   text-align: center;
-  color: #002130; /* Change text color as needed */
+  color: #002130;
 }
 
 .linkedin-title {
-  width: 30%; /* Adjust width as needed */
-  height: 10%; /* Adjust height as needed */
-  background-color: #ffffff; /* Change background color as needed */
+  width: 30%;
+  height: 10%;
+  background-color: #ffffff;
   transform: skewX(-20deg);
-  margin: 20px;
-  margin-left: auto; /* Set margin-left to auto */
-  margin-right: -20px; /* Adjust this value based on the skew angle */
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: -5%;
   position: relative;
 }
 
-.linkedin-title::before {
+/* .linkedin-title::before {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px; /* Adjust this value based on the skew angle */
-  width: 20px; /* Adjust this value based on the skew angle */
+  right: -20px;
+  width: 20px;
   height: 100%;
-  background-color: #ffffff; /* Change background color as needed */
+  background-color: #ffffff;
   transform: skewX(-20deg);
-}
+} */
 
 .linkedin-title h1 {
   transform: skewX(20deg);
   margin: 0;
   text-align: center;
-  padding: 4% 10%;
-  color: #002130; /* Change text color as needed */
+  padding: 4%;
+  padding-right: 20%;
+  color: #002130;
 }
+
+/* //Right Trapoziod Alternative
+
+border-bottom: 50px solid #ffffff;
+border-left: 60px solid transparent;
+border-right: 0px solid transparent; */

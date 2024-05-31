@@ -17,7 +17,8 @@ const About = () => {
       <div className="about-container">
         <div className="about-text">
           <div className="about-name ">
-            <h1>Welcome to my Portfolio!</h1>
+            <h1>Welcome to my Portfolio!</h1> <br></br>
+            <h1>I Am A</h1>
           </div>
           <div className="about-typewriter">
             <IntroTypewriter />

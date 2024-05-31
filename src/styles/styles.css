@@ -1,4 +1,5 @@
 /* styles.css */
+
 .custom-card {
   margin: 1rem;
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
@@ -40,10 +41,51 @@
 .mt-5 {
   margin-top: 3rem; /* Adjust the margin as necessary */
 }
+.project-title {
+  width: 30%;
+  height: 10%;
+  background-color: #ffffff;
+  transform: skewX(20deg);
+  margin-top: 3%;
+  margin: 2%;
+  margin-left: -5%;
+  position: relative;
+}
+
+.project-title h1 {
+  transform: skewX(-20deg);
+  margin: 0;
+  padding: 4%;
+  padding-left: 20%;
+  text-align: center;
+  color: #002130;
+}
+
+.mini-title {
+  width: 30%;
+  height: 10%;
+  background-color: #ffffff;
+  transform: skewX(-20deg);
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: -5%;
+  position: relative;
+}
+
+.mini-title h1 {
+  transform: skewX(20deg);
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+
+  padding: 4%;
+  padding-right: 20%;
+  color: #002130;
+}
 
 /* styles.css */
 .large-text {
-  font-size: xx-large;
+  font-size: 3.5rem;
 }
 
 .nav-link:hover {
@@ -189,7 +231,7 @@ text-body.footer-text {
 }
 
 .sourcecode-btn:hover {
-  background-color: #fff;
+  background-color: #03323d;
   border-color: #000000;
-  color: #002630;
+  color: #ffffff;
 }

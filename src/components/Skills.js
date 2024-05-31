@@ -10,9 +10,8 @@ import {
   DiNodejsSmall,
   DiMysql,
   DiWordpress,
-  DiA,
 } from "react-icons/di";
-
+import { SiVisualstudiocode, SiPostman, SiAdobe } from "react-icons/si";
 import {
   faJs,
   faJava,
@@ -35,6 +34,7 @@ const Skills = () => {
     wordpress: false,
     postman: false,
     adobe: false,
+    vscode: false,
   });
 
   const toggleText = (skill) => {
@@ -76,23 +76,24 @@ const Skills = () => {
       <h3>Tools</h3>
       <div className="skills-grid-container">
         {/* You can repeat this card component for each of your 6 cards */}
-        <div className="skills-card" onClick={() => toggleText("bootstrap")}>
-          {showText.bootstrap ? "Bootstrap" : <DiBootstrap />}
+        <div className="skills-card" onClick={() => toggleText("vscode")}>
+          {showText.vscode ? "VS Code" : <SiVisualstudiocode />}
         </div>
         <div className="skills-card" onClick={() => toggleText("node")}>
           {showText.node ? "Node JS" : <DiNodejsSmall />}
         </div>
-        <div className="skills-card" onClick={() => toggleText("sql")}>
-          {showText.sql ? "SQL" : <DiMysql />}
+        <div className="skills-card" onClick={() => toggleText("postman")}>
+          {showText.postman ? "Postman" : <SiPostman />}
         </div>
         <div className="skills-card" onClick={() => toggleText("sql")}>
           {showText.sql ? "SQL" : <DiMysql />}
         </div>
+
         <div className="skills-card" onClick={() => toggleText("wordpress")}>
           {showText.wordpress ? "WordPress" : <DiWordpress />}
         </div>
-        <div className="skills-card" onClick={() => toggleText("wordpress")}>
-          {showText.wordpress ? "WordPress" : <DiWordpress />}
+        <div className="skills-card" onClick={() => toggleText("adobe")}>
+          {showText.adobe ? "Adobe" : <SiAdobe />}
         </div>
       </div>
     </div>

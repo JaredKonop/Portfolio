@@ -18,7 +18,7 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="navbar p-2 sticky-top">
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/about">
           <img src={jklogo} width="80" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
