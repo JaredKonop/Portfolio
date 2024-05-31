@@ -10,6 +10,8 @@ import tele from "../Assets/tele.mp4";
 import inpirational from "../Assets/inspirational.gif";
 import pushups from "../Assets/pushup.gif";
 import movie from "../Assets/movie.gif";
+import wireshark from "../Assets/wireshark.gif";
+import doge from "../Assets/dogegif.gif";
 import "../styles/styles.css"; // Import the styles.css file
 import "../styles/variables.css";
 import Particle from "../components/Particles";
@@ -22,13 +24,13 @@ const cardData = [
     url: "https://github.com/JaredKonop/react-teleprecept", // Specify the URL for this card
   },
   {
-    img: ce,
+    media: <img src={wireshark} alt="Movie Rater GIF" width="100%" />,
     title: "Network Packet Analyzer",
     text: "• Developed a user-friendly UI that does packet analysis on a local network.",
     url: "https://github.com/JaredKonop/NetworkPacketAnalyzer", // Specify the URL for this card
   },
   {
-    img: ce,
+    media: <img src={doge} alt="Movie Rater GIF" width="100%" />,
     title: "2D Platformer DogeRun",
     text: "• Programmed a single player 2-Dimensional platform game with several levels and a leaderboard.",
     url: "https://github.com/JaredKonop/DogeRun", // Specify the URL for this card
