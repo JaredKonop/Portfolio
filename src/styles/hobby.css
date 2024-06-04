@@ -114,6 +114,7 @@ svg {
 
 .movies {
   display: flex;
+  justify-content: center;
 }
 
 @media (orientation: landscape) {
@@ -150,7 +151,7 @@ main {
   aspect-ratio: 0.6428571429;
   background: center / cover no-repeat url("../Assets/Joker/Joker_bg.png");
   margin-right: 20px;
-  width: 30%;
+  width: 25%;
   max-width: 45vmin;
   position: relative;
   animation: move 15s 0s infinite;
@@ -221,7 +222,7 @@ main {
   aspect-ratio: 0.6428571429;
   background: center / cover no-repeat url("../Assets/Up/bg.png");
   margin-right: 20px;
-  width: 30%;
+  width: 25%;
   max-width: 45vmin;
   position: relative;
   animation: move 15s 0s infinite;
@@ -303,6 +304,156 @@ main {
   filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
   -webkit-backdrop-filter: blur(18px);
   border-radius: 6vmin;
+}
+
+#oppenheimer_poster {
+  aspect-ratio: 0.6428571429;
+  background: center / cover no-repeat url("../Assets/Oppenheimer/bg.png");
+  width: 25%;
+  max-width: 63vmin;
+  position: relative;
+  animation: move 15s 0s infinite;
+  transform-style: preserve-3d;
+  border-radius: 2vmin;
+}
+#cast {
+  position: absolute;
+  top: 5%;
+  left: -25%;
+  width: 150%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(3vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#specs {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(8vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+  animation: rotate 16s linear infinite;
+}
+
+#specs1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 85%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(3vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+  animation: rotate 18s linear infinite;
+}
+
+#specs2 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 75%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(12vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+  animation: rotate 25s linear infinite;
+}
+#specs3 {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(5vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+  animation: rotate 10s linear infinite;
+}
+#specs4 {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(15vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+  animation: rotate 30s linear infinite;
+}
+#specs5 {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(45vmin);
+  transform-style: preserve-3d;
+  -webkit-backdrop-filter: blur(10px);
+  animation: rotate 2s linear infinite;
+}
+
+#tom {
+  position: absolute;
+  bottom: -5%;
+  left: 25%;
+  width: 70%;
+  height: auto;
+  transform: translateZ(8vmin);
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
+  border-radius: 12vmin;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#chris {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+  width: 85%;
+  height: auto;
+  transform: translateZ(6vmin);
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 6vmin;
+}
+
+#oppenheimer {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 100%;
+  height: auto;
+  transform: translateZ(12vmin);
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 26vmin;
 }
 
 .books-section {

@@ -10,6 +10,13 @@ import old_guy from "../Assets/Up/Old guy.png";
 import dog from "../Assets/Up/Dog.png";
 import up from "../Assets/Up/UP.png";
 import Book from "../components/Book";
+import Cast from "../Assets/Oppenheimer/cast.png";
+import bg from "../Assets/Oppenheimer/bg.png";
+import oppenheimer from "../Assets/Oppenheimer/oppenheimer.png";
+import chris from "../Assets/Oppenheimer/chris.png";
+import tommy from "../Assets/Oppenheimer/Tommy.png";
+import specs from "../Assets/Oppenheimer/specs.png";
+import specs1 from "../Assets/Oppenheimer/specs1.png";
 import green from "../Assets/green_cropped.png";
 import golfer from "../Assets/golfer_cropped.png";
 import Golf from "../components/Golf";
@@ -70,6 +77,18 @@ const Hobby = () => {
             <img id="up" src={up} alt="UP" />
             <img id="dog" src={dog} alt="dog" />
             <img id="old_guy" src={old_guy} alt="old_guy" />
+          </article>
+          <article id="oppenheimer_poster">
+            <img id="cast" src={Cast} alt="Cast" />
+            <img id="specs" src={specs} alt="Specs" />
+            <img id="specs2" src={specs} alt="Specs2" />
+            <img id="specs3" src={specs} alt="Specs3" />
+            <img id="specs4" src={specs} alt="Specs4" />
+            <img id="specs5" src={specs} alt="Specs5" />
+            <img id="specs1" src={specs1} alt="Specs1" />
+            <img id="oppenheimer" src={oppenheimer} alt="Title" />
+            <img id="chris" src={chris} alt="Chris" />
+            <img id="tom" src={tommy} alt="Cillian Murphy" />
           </article>
         </div>
       </div>
