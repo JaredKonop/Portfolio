@@ -17,24 +17,9 @@ import chris from "../Assets/Oppenheimer/chris.png";
 import tommy from "../Assets/Oppenheimer/Tommy.png";
 import specs from "../Assets/Oppenheimer/specs.png";
 import specs1 from "../Assets/Oppenheimer/specs1.png";
-import green from "../Assets/green_cropped.png";
-import golfer from "../Assets/golfer_cropped.png";
-import Golf from "../components/Golf";
+import run from "../Assets/running.gif";
 
 const Hobby = () => {
-  const [startAnimation, setStartAnimation] = useState(false);
-  const [resetAnimation, setResetAnimation] = useState(false);
-
-  const handleGolferClick = () => {
-    setStartAnimation(true);
-    setResetAnimation(false);
-  };
-
-  const handleGreenClick = () => {
-    setResetAnimation(true);
-    setStartAnimation(false);
-  };
-
   return (
     <div className="hobby-container">
       <div className="hobby-title">
@@ -108,17 +93,30 @@ const Hobby = () => {
           </a>
         </div>
       </div>
-
-      {/* <div className="golf-section">
-        <Golf start={startAnimation} reset={resetAnimation} />
-        <div className="golf" onClick={handleGolferClick}>
-          <img src={golfer} alt="Golfer" className="smaller-golfer" />
-          <h1>Golf</h1>
+      <div className="extra-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="column-content">
+                <h2>Golf</h2>
+                <img src={run} alt="GIF 1" className="gif-image" />
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="column-content">
+                <h2>Lifting</h2>
+                <img src="gif_url_2.gif" alt="GIF 2" className="gif-image" />
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="column-content">
+                <h2>Jogging3</h2>
+                <img src="gif_url_3.gif" alt="GIF 3" className="gif-image" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="green" onClick={handleGreenClick}>
-          <img src={green} alt="Golf Green" className="smaller-image" />
-        </div>
-      </div> */}
+      </div>
     </div>
   );
 };

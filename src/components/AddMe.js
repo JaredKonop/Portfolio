@@ -23,7 +23,7 @@ function AddMe() {
             rel="noopener noreferrer"
             className="text-white hover:text-blue-600 p-5"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="10x" />
+            <FontAwesomeIcon icon={faLinkedin} size="8x" />
           </a>
           <a
             href="https://github.com/JaredKonop/"
@@ -31,7 +31,7 @@ function AddMe() {
             rel="noopener noreferrer"
             className="text-white hover:text-gray-400 p-5"
           >
-            <FontAwesomeIcon icon={faGithub} size="10x" />
+            <FontAwesomeIcon icon={faGithub} size="8x" />
           </a>
           <a
             href="https://www.facebook.com/jared.konop/"
@@ -39,7 +39,7 @@ function AddMe() {
             rel="noopener noreferrer"
             className="text-white hover:text-blue-800 p-5"
           >
-            <FontAwesomeIcon icon={faFacebook} size="10x" />
+            <FontAwesomeIcon icon={faFacebook} size="8x" />
           </a>
 
           <a
@@ -48,7 +48,7 @@ function AddMe() {
             rel="noopener noreferrer"
             className="text-white hover:text-pink-500 p-5"
           >
-            <FontAwesomeIcon icon={faInstagram} size="10x" />
+            <FontAwesomeIcon icon={faInstagram} size="8x" />
           </a>
 
           <a
@@ -57,7 +57,7 @@ function AddMe() {
             rel="noopener noreferrer"
             className="text-white hover:text-blue-400 p-5"
           >
-            <FontAwesomeIcon icon={faTwitter} size="10x" />
+            <FontAwesomeIcon icon={faTwitter} size="8x" />
           </a>
         </div>
       </div>

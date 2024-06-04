@@ -9,6 +9,7 @@ const IntroTypewriter = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        padding: "15%",
         height: "10vh",
         color: "white",
       }}
@@ -20,6 +21,7 @@ const IntroTypewriter = () => {
               " Frontend Developer",
               " Backend Developer",
               " Web Developer",
+              " Coach",
             ],
             autoStart: true,
             loop: true,

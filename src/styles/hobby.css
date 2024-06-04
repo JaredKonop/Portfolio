@@ -578,3 +578,8 @@ main {
     height: 40vw;
   }
 }
+
+.gif-image {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

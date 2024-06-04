@@ -13,6 +13,7 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/styles.css";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function BasicExample() {
   return (
@@ -21,7 +22,9 @@ function BasicExample() {
         <Navbar.Brand href="/about">
           <img src={jklogo} width="80" alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <FontAwesomeIcon icon={faBars} className="text-white" />
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
