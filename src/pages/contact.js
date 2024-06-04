@@ -3,6 +3,7 @@ import { Container, Form, Button, Alert } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import "../styles/contact.css";
 import Particle from "../components/Particles";
+import AddMe from "../components/AddMe";
 
 const ContactMe = () => {
   const [status, setStatus] = useState("");
@@ -93,6 +94,7 @@ const ContactMe = () => {
         {" "}
         <h1>Add Me!</h1>
       </div>
+      <AddMe />
     </div>
   );
 };

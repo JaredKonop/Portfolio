@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom"; // Import Link from React Router
 import ce from "../Assets/codeEditor.png";
-import tele from "../Assets/tele.mp4";
+import tele from "../Assets/teleprecept.gif";
 import inpirational from "../Assets/inspirational.gif";
 import pushups from "../Assets/pushup.gif";
 import movie from "../Assets/movie.gif";
@@ -20,30 +20,35 @@ const cardData = [
   {
     media: <img src={tele} alt="Project GIF" width="100%" />,
     title: "TelePreceptMatch",
-    text: "• Designed and coded a live website to connect students with preceptors for clinical rotations.",
+    sub: "ReactJS, Tailwind CSS, HTML",
+    text: "• A website to connect students with preceptors for clinical rotations • Key features were Signup, Login, Password management, and Connect / Message other users.",
     url: "https://github.com/JaredKonop/react-teleprecept", // Specify the URL for this card
   },
   {
     media: <img src={wireshark} alt="Movie Rater GIF" width="100%" />,
     title: "Network Packet Analyzer",
-    text: "• Developed a user-friendly UI that does packet analysis on a local network.",
+    sub: "JavaScript, Python, HTML, CSS, Wireshark",
+    text: "• A user-friendly UI that does packet analysis on a local network • Utilized the application Wireshark for backend functionality",
     url: "https://github.com/JaredKonop/NetworkPacketAnalyzer", // Specify the URL for this card
   },
   {
     media: <img src={doge} alt="Movie Rater GIF" width="100%" />,
     title: "2D Platformer DogeRun",
-    text: "• Programmed a single player 2-Dimensional platform game with several levels and a leaderboard.",
+    sub: "C, C++, CMake, DCL",
+    text: "• Programmed a single player 2-Dimensional platform game with several levels and a leaderboard • Ability to create new levels from a simple text file",
     url: "https://github.com/JaredKonop/DogeRun", // Specify the URL for this card
   },
   {
     img: ce,
     title: "Portfolio",
-    text: "• This is the website you are visiting right now!",
+    sub: "ReactJS, Tailwind CSS, CSS, HTML, NPM,  Github",
+    text: "• This is the website you are visiting right now. Designed and coded by me! ",
     url: "https://github.com/JaredKonop/Portfolio", // Specify the URL for this card
   },
   {
     media: <img src={movie} alt="Movie Rater GIF" width="100%" />,
     title: "Movie Rater",
+    sub: "JavaScript, HTML, CSS",
     text: "I love movies and rating them so I can quantiatively remember how much i enjoyed the movie in the future. This was based on my own personal criterial when I consider a movies rating. The categories are weighted differently based off of a survey i took. ",
     url: "https://github.com/JaredKonop/MovieRater", // Specify the URL for this card
   },
@@ -51,12 +56,14 @@ const cardData = [
   {
     media: <img src={pushups} alt="Pushups GIF" width="100%" />,
     title: "Push-ups",
+    sub: "JavaScript, HTML, CSS",
     text: "Working out is a passion of mine, so why not sprinkle it in throughout the day? A few co-workers and myself will rep pushups throughout the day to keep our blood flowing",
     url: "https://github.com/JaredKonop/Pushups", // Specify the URL for this card
   },
   {
     media: <img src={inpirational} alt="Inspirational GIF" width="100%" />,
     title: "Inpirational Quotes",
+    sub: "JavaScript, HTML, CSS",
     text: "Who doesn't need a little inpiration every now and then? On a large TV in my office, we display this program which randomly grabs an employees picture and a notable quote and generates it every 30 seconds.",
     url: "https://github.com/JaredKonop/InspirationalQuotes.github.io", // Specify the URL for this card
   },
@@ -78,11 +85,12 @@ const Projects = () => {
         >
           {cardData.slice(0, 4).map((card, idx) => (
             <Col key={idx} className="d-flex justify-content-center">
-              <Card className="custom-card" style={{ width: "22rem" }}>
+              <Card className="custom-card" style={{ width: "30rem" }}>
                 <Card.Img variant="top" src={card.img} />
                 <Card.Body>
                   {card.media}
                   <Card.Title>{card.title}</Card.Title>
+                  <Card.Text style={{ color: "red" }}>{card.sub}</Card.Text>
                   <Card.Text>{card.text}</Card.Text>
                   <Link
                     to={card.url}
