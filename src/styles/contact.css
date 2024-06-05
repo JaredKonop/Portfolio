@@ -1,3 +1,7 @@
+.contact {
+  margin-top: 5%;
+}
+
 .contact-me-container {
   margin-top: 5%;
   padding: 2%;
@@ -41,16 +45,11 @@
   position: relative;
 }
 
-/* .contact-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 20px;
-  height: 100%;
-  background-color: #ffffff;
-  transform: skewX(20deg);
-} */
+@media (max-width: 600px) {
+  .contact-title h1 {
+    font-size: large;
+  }
+}
 
 .contact-title h1 {
   transform: skewX(-20deg);
@@ -72,17 +71,6 @@
   position: relative;
 }
 
-/* .linkedin-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -20px;
-  width: 20px;
-  height: 100%;
-  background-color: #ffffff;
-  transform: skewX(-20deg);
-} */
-
 .linkedin-title h1 {
   transform: skewX(20deg);
   margin: 0;
@@ -92,8 +80,8 @@
   color: #002130;
 }
 
-/* //Right Trapoziod Alternative
-
-border-bottom: 50px solid #ffffff;
-border-left: 60px solid transparent;
-border-right: 0px solid transparent; */
+@media (max-width: 600px) {
+  .linkedin-title h1 {
+    font-size: large;
+  }
+}

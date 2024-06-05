@@ -41,6 +41,10 @@
 .mt-5 {
   margin-top: 3rem; /* Adjust the margin as necessary */
 }
+
+.project {
+  margin-top: 5%;
+}
 .project-title {
   width: 30%;
   height: 10%;
@@ -50,6 +54,12 @@
   margin: 2%;
   margin-left: -5%;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .project-title h1 {
+    font-size: large;
+  }
 }
 
 .project-title h1 {
@@ -66,7 +76,7 @@
   height: 10%;
   background-color: #ffffff;
   transform: skewX(-20deg);
-  margin-top: 3%;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: -5%;
   position: relative;
@@ -76,11 +86,15 @@
   transform: skewX(20deg);
   margin: 0;
   text-align: center;
-  justify-content: center;
-
   padding: 4%;
   padding-right: 20%;
   color: #002130;
+}
+
+@media (max-width: 600px) {
+  .mini-title h1 {
+    font-size: large;
+  }
 }
 
 /* styles.css */

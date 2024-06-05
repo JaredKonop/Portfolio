@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -71,13 +70,13 @@ const cardData = [
 
 const Projects = () => {
   return (
-    <div className="d-flex justify-content-center align-items-center min-vh-100 pt-5">
+    // <div className="d-flex justify-content-center align-items-center min-vh-100 pt-5">
+    <div className="project">
+      <div className="project-title">
+        {" "}
+        <h1>Projects</h1>
+      </div>
       <Container className="mt-5">
-        <div className="project-title">
-          {" "}
-          <h1>Projects</h1>
-        </div>
-
         <Row
           xs={1}
           md={2}
@@ -105,13 +104,14 @@ const Projects = () => {
             </Col>
           ))}
         </Row>
-        {/* New title above the new row of 3 centered cards */}
+      </Container>
+      {/* New title above the new row of 3 centered cards */}
 
-        <div className="mini-title">
-          {" "}
-          <h1>Mini Projects</h1>
-        </div>
-
+      <div className="mini-title">
+        {" "}
+        <h1>Mini Projects</h1>
+      </div>
+      <Container>
         {/* New row of 3 centered cards */}
         <Row
           xs={1}
