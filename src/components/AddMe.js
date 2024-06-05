@@ -1,5 +1,4 @@
 import React from "react";
-import Home from "../pages/home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -8,7 +7,6 @@ import {
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import Particle from "./Particles";
 import "../styles/styles.css";
 import "..//App.css";
 

@@ -10,7 +10,6 @@ import dog from "../Assets/Up/Dog.png";
 import up from "../Assets/Up/UP.png";
 import Book from "../components/Book";
 import Cast from "../Assets/Oppenheimer/cast.png";
-import bg from "../Assets/Oppenheimer/bg.png";
 import oppenheimer from "../Assets/Oppenheimer/oppenheimer.png";
 import chris from "../Assets/Oppenheimer/chris.png";
 import tommy from "../Assets/Oppenheimer/Tommy.png";

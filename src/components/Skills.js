@@ -2,15 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "../styles/about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CIcon from "@coreui/icons-react";
-import { cibPostman, cibAdobe } from "@coreui/icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons/faReact";
-import {
-  DiBootstrap,
-  DiNodejsSmall,
-  DiMysql,
-  DiWordpress,
-} from "react-icons/di";
+import { DiNodejsSmall, DiMysql, DiWordpress } from "react-icons/di";
 import { SiVisualstudiocode, SiPostman, SiAdobe } from "react-icons/si";
 import {
   faJs,

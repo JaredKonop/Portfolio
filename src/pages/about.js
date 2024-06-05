@@ -1,7 +1,6 @@
 import React from "react";
 import Particle from "../components/Particles";
 import "../styles/about.css";
-import me from "../Assets/me.jpg";
 import me_blacksuit from "../Assets/me_blacksuit.jpg";
 import IntroTypewriter from "../components/IntroTypewriter";
 import Skills from "../components/Skills";
@@ -18,7 +17,7 @@ const About = () => {
         <div className="about-text">
           <div className="about-name ">
             <h1>Welcome to Jared's Portfolio!</h1> <br></br>
-            <h1>I Am A</h1>
+            <h1>I am a</h1>
           </div>
           <div className="about-typewriter">
             <IntroTypewriter />
