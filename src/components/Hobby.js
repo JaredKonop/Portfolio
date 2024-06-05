@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/hobby.css";
 import JP from "../Assets/Joker/Jonaquin_Phoneix.png";
 import Person from "../Assets/Joker/Joker_person_w_legs.png";
@@ -18,6 +18,7 @@ import tommy from "../Assets/Oppenheimer/Tommy.png";
 import specs from "../Assets/Oppenheimer/specs.png";
 import specs1 from "../Assets/Oppenheimer/specs1.png";
 import run from "../Assets/running.gif";
+import lift from "../Assets/lift.gif";
 
 const Hobby = () => {
   return (
@@ -28,7 +29,7 @@ const Hobby = () => {
       </div>
       <div className="movie-section">
         <div className="letterbox">
-          <h1>Movies</h1>
+          <h1>⦿ Movies</h1>
           <a
             href="https://letterboxd.com/unclejared/films/by/entry-rating/"
             target="_blank"
@@ -83,7 +84,7 @@ const Hobby = () => {
           <Book />
         </div>
         <div className="goodreads">
-          <h1>Books</h1>
+          <h1>⦿ Books</h1>
           <a
             href="https://www.goodreads.com/review/list/175927632-jared-konop?shelf=read&view=covers"
             target="_blank"
@@ -93,28 +94,15 @@ const Hobby = () => {
           </a>
         </div>
       </div>
-      <div className="extra-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="column-content">
-                <h2>Golf</h2>
-                <img src={run} alt="GIF 1" className="gif-image" />
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="column-content">
-                <h2>Lifting</h2>
-                <img src="gif_url_2.gif" alt="GIF 2" className="gif-image" />
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="column-content">
-                <h2>Jogging3</h2>
-                <img src="gif_url_3.gif" alt="GIF 3" className="gif-image" />
-              </div>
-            </div>
-          </div>
+      <div className="three-column-layout">
+        <div className="hobby-column">
+          <p>⦿ Golfing</p>
+        </div>
+        <div className="hobby-column">
+          <p>⦿ Weight Lifting</p>
+        </div>
+        <div className="hobby-column">
+          <p>⦿ Running</p>
         </div>
       </div>
     </div>
