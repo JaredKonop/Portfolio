@@ -27,7 +27,6 @@
     "react-pdf": "^5.7.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "react-tsparticles": "^1.42.2",
     "styled-components": "^5.3.10",
     "tsparticles": "^3.4.0",
     "tsparticles-slim": "^2.12.0",

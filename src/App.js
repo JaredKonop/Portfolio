@@ -9,7 +9,6 @@ import {
   Link,
 } from "react-router-dom";
 import BasicExample from "./components/NavBar";
-import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Resume from "./pages/resume";
