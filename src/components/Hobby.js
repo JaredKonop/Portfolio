@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import "../styles/hobby.css";
 import JP from "../Assets/Joker/Jonaquin_Phoneix.png";
 import Person from "../Assets/Joker/Joker_person_w_legs.png";
@@ -17,8 +16,6 @@ import chris from "../Assets/Oppenheimer/chris.png";
 import tommy from "../Assets/Oppenheimer/Tommy.png";
 import specs from "../Assets/Oppenheimer/specs.png";
 import specs1 from "../Assets/Oppenheimer/specs1.png";
-import run from "../Assets/running.gif";
-import lift from "../Assets/lift.gif";
 
 const Hobby = () => {
   return (
