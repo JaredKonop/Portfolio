@@ -159,11 +159,11 @@
 .transparent-background {
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  /* background: rgba(0, 0, 0, 0.3); Semi-transparent background */
   z-index: 1000; /* Ensure the navbar is above other content */
-  backdrop-filter: blur(
+  /* backdrop-filter: blur(
     10px
-  ); /* Optional: Add a blur effect for better readability */
+  ); Optional: Add a blur effect for better readability */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
@@ -183,11 +183,11 @@ text-body.footer-text {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  /* background: rgba(0, 0, 0, 0.6); Semi-transparent background */
   z-index: 2000; /* Ensure the navbar is above other content */
-  backdrop-filter: blur(
+  /* backdrop-filter: blur(
     10px
-  ); /* Optional: Add a blur effect for better readability */
+  ); Optional: Add a blur effect for better readability */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 

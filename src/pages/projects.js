@@ -14,6 +14,9 @@ import doge from "../Assets/dogegif.gif";
 import "../styles/styles.css"; // Import the styles.css file
 import "../styles/variables.css";
 import Particle from "../components/Particles";
+import ComparisonSlider from "../components/ComparisonSlider";
+import beforeImage from "../Assets/Cloverwebsite.png"; // Replace with the path to your before image
+import afterImage from "../Assets/Mywebsite.png"; // Replace with the path to your after image
 
 const cardData = [
   {
@@ -66,6 +69,13 @@ const cardData = [
     text: "Who doesn't need a little inpiration every now and then? On a large TV in my office, we display this program which randomly grabs an employees picture and a notable quote and generates it every 30 seconds.",
     url: "https://github.com/JaredKonop/InspirationalQuotes.github.io", // Specify the URL for this card
   },
+  {
+    media: <ComparisonSlider before={beforeImage} after={afterImage} />,
+    title: "Golf Revamp",
+    sub: "TypeScript, ViteTS, HTML,CSS",
+    text: "Revamping golf websites.",
+    url: "https://github.com/JaredKonop/GolfWebsite", // Specify the URL for this card
+  },
 ];
 
 const Projects = () => {
@@ -73,6 +83,40 @@ const Projects = () => {
     // <div className="d-flex justify-content-center align-items-center min-vh-100 pt-5">
     <div className="project">
       <div className="project-title">
+        {" "}
+        <h1>In Progress...</h1>
+      </div>
+
+      <Container className="mt-5">
+        <Row
+          xs={1}
+          md={2}
+          className="g-4 justify-content-center align-items-center"
+        >
+          {cardData.slice(7, 8).map((card, idx) => (
+            <Col key={idx} className="d-flex justify-content-center">
+              <Card className="custom-card" style={{ width: "30rem" }}>
+                <Card.Img variant="top" src={card.img} />
+                <Card.Body>
+                  {card.media}
+                  <Card.Title>{card.title}</Card.Title>
+                  <Card.Text style={{ color: "red" }}>{card.sub}</Card.Text>
+                  <Card.Text>{card.text}</Card.Text>
+                  <Link
+                    to={card.url}
+                    className="btn sourcecode-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source Code
+                  </Link>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+      <div className="mini-title">
         {" "}
         <h1>Projects</h1>
       </div>
@@ -107,7 +151,7 @@ const Projects = () => {
       </Container>
       {/* New title above the new row of 3 centered cards */}
 
-      <div className="mini-title">
+      <div className="project-title">
         {" "}
         <h1>Mini Projects</h1>
       </div>
