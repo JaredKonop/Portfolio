@@ -44,7 +44,7 @@ const cardData = [
     img: ce,
     title: "Portfolio",
     sub: "ReactJS, Tailwind CSS, CSS, HTML, NPM,  Github",
-    text: "• This is the website you are visiting right now. Designed and coded by me! ",
+    text: "• This is the website you are visiting right now. Designed and coded by me! Frequent updates will be made to include by latest projects. ",
     url: "https://github.com/JaredKonop/Portfolio", // Specify the URL for this card
   },
   {
@@ -71,9 +71,9 @@ const cardData = [
   },
   {
     media: <ComparisonSlider before={beforeImage} after={afterImage} />,
-    title: "Golf Revamp",
-    sub: "TypeScript, ViteTS, HTML,CSS",
-    text: "Revamping golf websites.",
+    title: "Golf Website Revamp",
+    sub: "TypeScript, Vite, HTML, CSS",
+    text: "This project aims to transform outdated local golfing websites into modern, clean, and user-friendly platforms. The goal is to enhance the online presence of golf courses, clubs, and associations by providing visually appealing, responsive, and feature-rich websites that cater to the needs of both existing members and potential new visitors.",
     url: "https://github.com/JaredKonop/GolfWebsite", // Specify the URL for this card
   },
 ];

@@ -20,6 +20,7 @@
   height: 100%;
   background-size: contain; /* Change to contain to fit the whole image */
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .comparison-before {
