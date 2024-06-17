@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom"; // Import Link from React Router
-import ce from "../Assets/codeEditor.png";
+import portfolio from "../Assets/portfolio-gif.gif";
 import tele from "../Assets/teleprecept.gif";
 import inpirational from "../Assets/inspirational.gif";
 import pushups from "../Assets/pushup.gif";
@@ -41,7 +41,7 @@ const cardData = [
     url: "https://github.com/JaredKonop/DogeRun", // Specify the URL for this card
   },
   {
-    img: ce,
+    media: <img src={portfolio} alt="My Portfolio GIF" width="100%" />,
     title: "Portfolio",
     sub: "ReactJS, Tailwind CSS, CSS, HTML, NPM,  Github",
     text: "• This is the website you are visiting right now. Designed and coded by me! Frequent updates will be made to include by latest projects. ",
