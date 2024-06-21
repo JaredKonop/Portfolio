@@ -11,6 +11,7 @@ import pushups from "../Assets/pushup.gif";
 import movie from "../Assets/movie.gif";
 import wireshark from "../Assets/wireshark.gif";
 import doge from "../Assets/dogegif.gif";
+import portfolio from "../Assets/portfolio-gif.gif";
 import "../styles/styles.css"; // Import the styles.css file
 import "../styles/variables.css";
 import Particle from "../components/Particles";
@@ -41,7 +42,7 @@ const cardData = [
     url: "https://github.com/JaredKonop/DogeRun", // Specify the URL for this card
   },
   {
-    img: ce,
+    media: <img src={portfolio} alt="My Portfolio GIF" width="100%" />,
     title: "Portfolio",
     sub: "ReactJS, Tailwind CSS, CSS, HTML, NPM,  Github",
     text: "• This is the website you are visiting right now. Designed and coded by me! Frequent updates will be made to include by latest projects. ",
