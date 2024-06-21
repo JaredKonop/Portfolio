@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom"; // Import Link from React Router
-import portfolio from "../Assets/portfolio-gif.gif";
 import tele from "../Assets/teleprecept.gif";
 import inpirational from "../Assets/inspirational.gif";
 import pushups from "../Assets/pushup.gif";
